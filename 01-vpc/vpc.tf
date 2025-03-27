@@ -1,6 +1,6 @@
 module "vpc" {
     #source = "../aws-vpc"
-    source = "https://jeethvishnu/terraform.git/vpc/?ref=main" #our repo url by default it will take main branch.... this is used to take the terraform code from remote not local.
+    source = "https://jeethvishnu/terraform.git/vpc?ref=main" #our repo url by default it will take main branch.... this is used to take the terraform code from remote not local.
     project_name = var.project
     common_tags = var.common_tags
     public_cidrs = var.public_subnet_cidrs
