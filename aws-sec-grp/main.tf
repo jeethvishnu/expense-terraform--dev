@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_tls" {
   name        = local.sg_name_f
   description = var.sg_decsript
-  vpc_id      = aws_vpc.main.id
+  vpc_id      = var.vpc_id
 
   dynamic "egress" {
     for_each = var.outbound_rules
