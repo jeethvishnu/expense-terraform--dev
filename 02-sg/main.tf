@@ -3,7 +3,7 @@ module "db" {
     project = var.project
     env = var.env
     sg_decsript = var.db_sg_descr
-    vpc_id = data.aws_ssm_parameter.vpc_id.value
+    vpc_id = data.aws_ssm_parameter.vpc_id.value #whatever the vpc val we gave in parameter that will store here
     common_tags = var.common_tags
     sg_name = "db"
   

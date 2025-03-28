@@ -21,9 +21,10 @@ variable "common_tags" {
 }
 
 variable "db_sg_descr" {
-    default = "sg for db mysql instnace"
+    default = "SG for db mysql instnace"
   
 }
 variable "sg_tags" {
-  
+  type = map
+  default = {}
 }
